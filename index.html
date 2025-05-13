@@ -327,6 +327,18 @@
     console.log("Opener: " + opener);
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/@elastic/behavioral-analytics-browser-tracker@2"></script>
+
+  <script type="text/javascript">
+    window.elasticAnalytics.createTracker({
+      endpoint: "https://localhost:9200",
+      collectionName: "website",
+      apiKey: "bV9MaXg1WUJvOEoyb2E2ODJoc3U6bVM5ZE9raHRRbmtqWWRPVEFaUER3dw==",
+      // Optional: sampling rate percentage: 0-1, 0 = no events, 1 = all events
+      // sampling: 1,
+    });
+  </script>
+
 </body>
 
 </html>
